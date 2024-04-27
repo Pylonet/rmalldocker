@@ -20,3 +20,7 @@ mv rmalldocker.sh /opt/
 ```
 chmod +x rmalldocker.sh
 ```
+
+3) You can add rmalldocker in your zshrc (PATH)
+
+![](/images/1.png)
