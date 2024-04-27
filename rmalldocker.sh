@@ -32,7 +32,7 @@ echo -e "$(docker rmi $(docker images -aq ) --force &>/dev/null)"
 
 sleep 2
 
-echo -e "\n${amarillo}[-] BORRADO CON EXITO${reset}\n"
+echo -e "\n${amarillo}[-] SUCCESSFULLY DELETED${reset}\n"
 
 echo -e "${rojo}[+]${reset}${azul} VOLUMENES${reset}"
 
