@@ -34,7 +34,7 @@ sleep 2
 
 echo -e "\n${amarillo}[-] SUCCESSFULLY DELETED${reset}\n"
 
-echo -e "${rojo}[+]${reset}${azul} VOLUMENES${reset}"
+echo -e "${rojo}[+]${reset}${azul} VOLUMES${reset}"
 
 echo -e "\n$(docker volume ls)\n"
 
