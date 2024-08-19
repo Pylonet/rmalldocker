@@ -16,12 +16,8 @@ then
 
   echo -e "\n$(docker ps)\n"
 
-  sleep 1.5
-
   echo -e "\n${rojo}[+]${reset}${verde} DELETING...${reset}\n"
   echo -e "$(docker rm $(docker ps -aq ) --force &>/dev/null)"
-
-  sleep 2
 
   echo -e "\n${amarillo}[-] SUCCESSFULLY DELETED${reset}\n"
 
@@ -29,13 +25,9 @@ then
 
   echo -e "\n$(docker images)\n"
 
-  sleep 1.5
-
   echo -e "\n${rojo}[+]${reset}${verde} DELETING...${reset}\n"
 
   echo -e "$(docker rmi $(docker images -aq ) --force &>/dev/null)"
-
-  sleep 2
 
   echo -e "\n${amarillo}[-] SUCCESSFULLY DELETED${reset}\n"
 
@@ -43,12 +35,8 @@ then
 
   echo -e "\n$(docker volume ls)\n"
 
-  sleep 1.5
-
   echo -e "\n${rojo}[+]${reset}${verde} DELETING...${reset}\n"
   echo -e "\n$(docker volume rm $(docker volume ls -q) --force &>/dev/null)\n"
-
-  sleep 2
 
   echo -e "\n${amarillo}[-] SUCCESSFULLY DELETED${reset}\n"
 else
